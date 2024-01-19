@@ -1,35 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App Landing</title>
+    <!-- tailwind css cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .poppins-font {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <body class="poppins-font">
+    <!-- nav section -->
+    <nav class="bg-[#0E1133]">
+      <div
+        class="container mx-auto flex justify-between items-center py-6 px-6"
+      >
+        <div class="flex gap-10">
+          <img src="assets/logo-3.png" alt="" srcset="" />
+          <div class="text-white gap-5 font-semibold list-none hidden md:flex">
+            <li>
+              <a class="hover:text-orange-600 duration-300" href="">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-orange-600 duration-300" href="">About</a>
+            </li>
+            <li>
+              <a class="hover:text-orange-600 duration-300" href="">Blog</a>
+            </li>
+            <li>
+              <a class="hover:text-orange-600 duration-300" href="">Service</a>
+            </li>
+            <li>
+              <a class="hover:text-orange-600 duration-300" href="">Contact</a>
+            </li>
+          </div>
+        </div>
+        <div class="text-white font-semibold hidden md:flex">
+          <button>Login</button>
+          <button class="bg-[#EF4444] py-3 px-5 rounded-md ml-4">
+            Get Started
+          </button>
+        </div>
+        <img class="md:hidden w-6" src="assets/more.png" alt="" srcset="" />
+      </div>
+    </nav>
 
-<body>
-    <header class="">
-        <nav class="bg-[#0E1133]">
-            <div class="container mx-auto flex justify-between items-center py-6 px-6">
-                <div class="flex gap-10 ">
-                    <img src="assets/logo-3.png" alt="" srcset="">
-                    <div class="text-white gap-5 font-semibold list-none hidden md:flex ">
-                        <li><a class="hover:text-orange-600 duration-300" href="">Home</a></li>
-                        <li><a class="hover:text-orange-600 duration-300" href="">About</a></li>
-                        <li><a class="hover:text-orange-600 duration-300" href="">Blog</a></li>
-                        <li><a class="hover:text-orange-600 duration-300" href="">Service</a></li>
-                        <li><a class="hover:text-orange-600 duration-300" href="">Contact</a></li>
-                    </div>
-                </div>
-                <div class="text-white font-semibold hidden md:flex">
-                    <button>Login</button>
-                    <button class="bg-[#EF4444] py-3 px-5 rounded-md ml-4">Get Started</button>
-                </div>
-                <img class="md:hidden w-6" src="assets/more.png" alt="" srcset="">
-            </div>
-        </nav>
+    <!-- hero banner section -->
+    <header class=" ">
+      <div class="bg-[#12174E] text-white flex justify-center relative">
+        <div
+          class="container mx-auto flex flex-col items-center px-5 py-28 md:py-[190px] space-y-8"
+        >
+          <h1 class="text-4xl md:text-6xl text-center font-semibold">
+            Creative Way to <br />
+            Showcase your <span class="text-[#EF4444]">App</span>
+          </h1>
+          <p class="opacity-65 text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In,
+            incidunt.
+          </p>
+          <div class="">
+            <button class="bg-[#EF4444] py-3 px-5 rounded-md">
+              Get a Quote
+            </button>
+            <button class="">
+              <i class="ri-play-circle-line text-2xl ml-3"></i> Play Video
+            </button>
+          </div>
+        </div>
+        <div class="absolute bottom-[-110px] md:bottom-[-250px] w-">
+          <img src="assets/hero-thumb-4.png" alt="" srcset="" />
+        </div>
+      </div>
     </header>
-</body>
-
+  </body>
 </html>
